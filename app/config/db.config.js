@@ -19,6 +19,6 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 //Models/tables
-db.guitars = require("../models/guitars.model")(sequelize, Sequelize);
+db.guitars = require("../model/guitar.model.js")(sequelize, Sequelize);
 
 module.exports = db;
