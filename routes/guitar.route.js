@@ -2,7 +2,7 @@ module.exports = function (app) {
   const guitars = require("../controllers/guitar.controller");
 
   // Create a new guitar
-  app.post("api/guitars/create", guitar.create);
+  app.post("api/guitars/create", guitars.create);
 
   // Retrieve all guitars
   app.get("/api/guitars", guitars.findAll);
